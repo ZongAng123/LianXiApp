@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		74AAF1282655FACC004E3DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAF1272655FACC004E3DF9 /* AppDelegate.swift */; };
-		74AAF12A2655FACC004E3DF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAF1292655FACC004E3DF9 /* SceneDelegate.swift */; };
 		74AAF12C2655FACC004E3DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAF12B2655FACC004E3DF9 /* ViewController.swift */; };
 		74AAF12F2655FACC004E3DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AAF12D2655FACC004E3DF9 /* Main.storyboard */; };
 		74AAF1312655FACF004E3DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AAF1302655FACF004E3DF9 /* Assets.xcassets */; };
 		74AAF1342655FACF004E3DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AAF1322655FACF004E3DF9 /* LaunchScreen.storyboard */; };
 		74AAF13F2655FACF004E3DF9 /* LianXiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAF13E2655FACF004E3DF9 /* LianXiAppTests.swift */; };
 		74AAF14A2655FACF004E3DF9 /* LianXiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAF1492655FACF004E3DF9 /* LianXiAppUITests.swift */; };
+		74AAF158265608AD004E3DF9 /* Customcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAF157265608AD004E3DF9 /* Customcell.swift */; };
+		74AAF15B26562F8C004E3DF9 /* BottonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAF15A26562F8C004E3DF9 /* BottonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		74AAF1242655FACC004E3DF9 /* LianXiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LianXiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AAF1272655FACC004E3DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74AAF1292655FACC004E3DF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		74AAF12B2655FACC004E3DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74AAF12E2655FACC004E3DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74AAF1302655FACF004E3DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		74AAF1452655FACF004E3DF9 /* LianXiAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LianXiAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AAF1492655FACF004E3DF9 /* LianXiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LianXiAppUITests.swift; sourceTree = "<group>"; };
 		74AAF14B2655FACF004E3DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74AAF157265608AD004E3DF9 /* Customcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customcell.swift; sourceTree = "<group>"; };
+		74AAF15A26562F8C004E3DF9 /* BottonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 		74AAF1262655FACC004E3DF9 /* LianXiApp */ = {
 			isa = PBXGroup;
 			children = (
+				74AAF15C26562F9F004E3DF9 /* 自定义cell */,
+				74AAF15926562F72004E3DF9 /* CustController */,
 				74AAF1272655FACC004E3DF9 /* AppDelegate.swift */,
-				74AAF1292655FACC004E3DF9 /* SceneDelegate.swift */,
 				74AAF12B2655FACC004E3DF9 /* ViewController.swift */,
 				74AAF12D2655FACC004E3DF9 /* Main.storyboard */,
 				74AAF1302655FACF004E3DF9 /* Assets.xcassets */,
@@ -126,6 +129,22 @@
 				74AAF14B2655FACF004E3DF9 /* Info.plist */,
 			);
 			path = LianXiAppUITests;
+			sourceTree = "<group>";
+		};
+		74AAF15926562F72004E3DF9 /* CustController */ = {
+			isa = PBXGroup;
+			children = (
+				74AAF15A26562F8C004E3DF9 /* BottonViewController.swift */,
+			);
+			path = CustController;
+			sourceTree = "<group>";
+		};
+		74AAF15C26562F9F004E3DF9 /* 自定义cell */ = {
+			isa = PBXGroup;
+			children = (
+				74AAF157265608AD004E3DF9 /* Customcell.swift */,
+			);
+			path = "自定义cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				74AAF12C2655FACC004E3DF9 /* ViewController.swift in Sources */,
+				74AAF158265608AD004E3DF9 /* Customcell.swift in Sources */,
+				74AAF15B26562F8C004E3DF9 /* BottonViewController.swift in Sources */,
 				74AAF1282655FACC004E3DF9 /* AppDelegate.swift in Sources */,
-				74AAF12A2655FACC004E3DF9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8J962WWSV;
 				INFOPLIST_FILE = LianXiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8J962WWSV;
 				INFOPLIST_FILE = LianXiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
